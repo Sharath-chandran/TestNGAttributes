@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<dependencies>
+				<group depends-on="Login Page" name="User Credentials"></group>
+			</dependencies>
+		</groups>
+		<classes>
+			<class name="testNG.DependsOnMethods" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

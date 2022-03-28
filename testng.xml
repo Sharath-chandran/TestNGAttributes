@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel= "classes" verbose="5">
+  <test thread-count="1" name="Leads">
+    <classes>
+      <class name="testNG.FindContacts"/>
+      <class name="testNG.CreateLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
